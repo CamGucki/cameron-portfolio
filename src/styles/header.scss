@@ -1,0 +1,33 @@
+.header {
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 20vw;
+}
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -20px;
+}
+.navbar a {
+	width: 20vw;
+	height: 50px;
+	background-color: rgb(104, 117, 129);
+	color: white;
+	border:none;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	text-decoration: none;
+	&:hover{
+		background-color:rgb(125, 140, 155);
+		color: black;
+		font-weight: 500;
+
+	}
+}
