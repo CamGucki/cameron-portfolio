@@ -1,24 +1,35 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import {
+	FaHome,
+	FaPortrait,
+	FaProjectDiagram,
+	FaMailBulk,
+} from "react-icons/fa";
+const Navigation = () => {
+	return (
+		<div className='navbar'>
 
- const Navigation = () => {
-        return (
-            <div className='navbar'>
-                <NavLink exact to ='/'>
-                    Home
-                </NavLink>
-                <NavLink to ='/about'>
-                    About
-                </NavLink>
-                <NavLink to ='/contact'>
-                    Contact
-                </NavLink>
-                <NavLink to ='/projects'>
-                    Projects
-                </NavLink>
-                
-                
-            </div>
-        );
-    }
+			<NavLink exact to='/'>
+				<FaHome />
+				Home
+			</NavLink>
 
-export default Navigation
+			<NavLink to='/about'>
+				<FaPortrait />
+				About
+			</NavLink>
+
+			<NavLink to='/projects'>
+				<FaProjectDiagram />
+				Projects
+			</NavLink>
+
+			<NavLink to='/contact'>
+				<FaMailBulk />
+				Contact
+			</NavLink>
+		</div>
+	);
+};
+
+export default Navigation;
