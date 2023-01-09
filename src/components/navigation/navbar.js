@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ProfileImg from "../../styles/images/profile-imgg.JPG"
 import {
 	FaHome,
 	FaPortrait,
@@ -8,6 +9,7 @@ import {
 const Navigation = () => {
 	return (
 		<div className='navbar'>
+			
 
 			<NavLink exact to='/'>
 				<FaHome />
